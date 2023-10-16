@@ -1,5 +1,6 @@
 public class BTPrinting extends BinaryTree{
-	
+
+	//Prints the postOrder for a BinaryTree Node
 	public void postOrder(Node node) {
 		if(node == null) {
 			return;
@@ -8,7 +9,8 @@ public class BTPrinting extends BinaryTree{
 		postOrder(node.right);
 		System.out.println(node.data);
 	}
-	
+
+	//Prints the right most nodes of a BinaryTree
 	public void printRight() {
 		
 		if(this.root != null) {
@@ -22,6 +24,8 @@ public class BTPrinting extends BinaryTree{
 			System.out.println("Tree is empty");
 		}
 	}
+
+	//Creates a BinaryTree and tests the methods
 	@Override
 	public void testMethods() {
 		BTPrinting tree1 = new BTPrinting();
