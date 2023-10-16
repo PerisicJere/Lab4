@@ -1,6 +1,7 @@
 public class BinaryTree {
     protected Node root;
 
+
     static class Node {
         int data;
         Node left;
