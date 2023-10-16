@@ -76,4 +76,23 @@ public class aggregateBT extends BinaryTree {
     public int findEvenSum() {
         return countEvenNumberRecursive(root); // Start recursion from the root node
     }
+
+    @Override
+    public  void testMethods() {
+      aggregateBT tree = new aggregateBT();
+      // Creating a sample tree
+      tree.root = new Node(1);
+      tree.root.left = new Node(2);
+      tree.root.right = new Node(3);
+      tree.root.left.left = new Node(4);
+      tree.root.left.right = new Node(5);
+
+      // Calling and printing the output of countEvenNumber() method
+      int evenCount = tree.findEvenSum();
+      System.out.println("Number of nodes with even values: " + evenCount);
+
+      // Calling and printing the output of findSum() method
+      int sum = tree.findSum();
+      System.out.println("Sum of values in the tree: " + sum);
+  }
 }

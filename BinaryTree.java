@@ -1,7 +1,6 @@
 public class BinaryTree {
     protected Node root;
 
-
     static class Node {
         int data;
         Node left;
@@ -20,11 +19,12 @@ public class BinaryTree {
 
    
       // Testing method to create a sample tree and test the methods
-      public static void testMethods() {
-  
+
+      public void testMethods() {
+        
     }
 
     public static void main(String[] args) {
-        testMethods();
+        
     }
 }
