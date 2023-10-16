@@ -17,9 +17,7 @@ public class BinaryTree {
         root = null;
     }
 
-    public void insert(int value) {
-        root = insertRec(root, value);
-    }
+   
     public void testing() {
     }
 }
